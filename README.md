@@ -41,6 +41,7 @@ zipcode         VARCHAR(50)
 ```
 
 * mvn clean
+* mvn install
 * mvn spring boot -run
 
 API	                        |Endpoint	                                              |Method|
