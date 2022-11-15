@@ -5,9 +5,11 @@ This a service create by sanchai srisamudh
 * Java version 11
 * Spring-boot 2.7.1
 
-login elephantsql
-create scritp
-#
+login elephantsql and run script
+
+* table user
+* table user_info
+```
 CREATE TABLE 'user'
 (
 id int ,
@@ -15,7 +17,9 @@ username  VARCHAR(50),
 password  VARCHAR(50),
 role      VARCHAR(50)
 );
-#
+```
+
+```
 CREATE TABLE 'user_info'
 (
 id int ,
@@ -34,5 +38,15 @@ sub_district    VARCHAR(50),
 province        VARCHAR(50),
 zipcode         VARCHAR(50)
 );
-#
+```
+
+* mvn clean
+* mvn spring boot -run
+
+API	                        |Endpoint	                                              |Method|
+----------------------------|-------------------------------------------------------|------|
+register user authorization	|http://localhost:1150/auth/register	                  | POST |
+login for get authorization	|http://localhost:1150/auth/login   	                  | POST |
+user register             	|http://localhost:1150/user/register	                  | POST |
+user get information	      |http://localhost:1150/user/information/{referenceCode}	| GET  |
 
