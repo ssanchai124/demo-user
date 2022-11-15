@@ -1,0 +1,16 @@
+server:
+  port: 1150
+spring:
+  datasource:
+    url: jdbc:postgresql://tiny.db.elephantsql.com/agxqaidg
+    username: agxqaidg
+    password: XTQZcp5D2ICkGN2Cffp8HkJdvjbZN0MJ
+  jpa:
+    properties:
+      hibernate:
+        format_sql: true
+    show-sql: true
+    hibernate.ddl-auto: create-drop
+
+
+
