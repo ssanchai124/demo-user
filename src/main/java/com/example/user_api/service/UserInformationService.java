@@ -39,9 +39,8 @@ public class UserInformationService {
 				req.setMemberType(Constant.PLATINUM);
 			}else if(salary > Constant.GOLD_OVER_SALARY && salary < Constant.GOLD_LESS_SALARY) {
 				req.setMemberType(Constant.GOLD);
-			}else if(salary > Constant.SILVER_SALARY){
+			}else if(salary < Constant.SILVER_SALARY){
 				req.setMemberType(Constant.SILVER);
-
 			}else if(salary < Constant.REJECT_SALARY){
 				throw new AppException(ResultConstant.SALARY_ERROR_MSG);
 			}
